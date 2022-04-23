@@ -155,7 +155,7 @@ body {
         font-size: 2rem; } }
 
 .heading {
-  background-image: linear-gradient(rgba(245, 191, 66, 0.7), rgba(245, 191, 66, 0.7)), url(../img/background.jpg);
+  background-image: linear-gradient(rgba(245, 191, 66, 0.7), rgba(245, 191, 66, 0.7)), url(/images/background.jpg);
   background-size: cover;
   background-position: top;
   grid-column: extra-start / full-end;
