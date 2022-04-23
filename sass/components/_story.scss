@@ -12,7 +12,7 @@
         grid-template-rows: repeat(3, 1fr);*/
 
         border-radius: 1rem;
-        box-shadow: .5rem 1rem 1rem .5rem rgba($color-black, .1);
+        box-shadow: $box-shadow;
         padding: 2rem;
         transition: all .5s;
         margin-bottom: 8rem;
@@ -20,12 +20,42 @@
         /*&--2 {
             grid-row: 2 / 3;
         }*/
+
+        &--img {
+            height: 12rem;
+            width: 12rem;
+        }
+
+        &--caption {
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, 20%); 
+            color: $color-grey-dark;
+            text-transform: uppercase;
+             font-size: 1.7rem;
+             text-align: center;
+             opacity: 0;
+             transition: all .2s;
+     
+             
+         }
+     
+         &:hover &--caption {
+             opacity: 1;
+             transform: translate(-50%, -50%);
+             backface-visibility: hidden;
+         }
+     
+         &:hover &--img {
+             filter: blur(3px) brightness(60%);
+         }
     }
 
-    &__img {
+    /*&__img {
         height: 12rem;
         width: 12rem;
-    }
+    }*/
     
 
     &-text {
@@ -54,9 +84,10 @@
             text-align: center;
             transform: translateY(2.5rem);
         }
+
     }
 
-    &__caption {
+    /*&__caption {
        position: absolute; 
        top: 50%;
        left: 50%;
@@ -67,6 +98,8 @@
         text-align: center;
         opacity: 0;
         transition: all .2s;
+
+        
     }
 
     &:hover &__caption {
@@ -77,9 +110,10 @@
 
     &:hover &__img {
         filter: blur(3px) brightness(60%);
-    }
+    }*/
 }
 
+ 
 .btn-story {
     width: 14rem !important;
     height: 6rem !important;
@@ -90,6 +124,10 @@
     &:hover {
         background-color: $color-primary;
     }
+}
+
+.container {
+
 }
 
 

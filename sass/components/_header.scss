@@ -1,7 +1,7 @@
 .heading {
     //background-color: $color-primary;
     background-image: linear-gradient(rgba($color-primary, .7), rgba($color-primary, .7)), 
-    url(/images/background.jpg);
+    url(/img/background.jpg);
     background-size: cover;
     background-position: top;
     grid-column: extra-start / full-end;
@@ -36,6 +36,7 @@
         animation-duration: 5s;*/
         animation: busmovein 5s .1s ease-in-out;
         transition: all;
+        margin-top: $margin-small;
     }
 }
 

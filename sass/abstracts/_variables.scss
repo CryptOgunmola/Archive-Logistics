@@ -18,6 +18,9 @@ $margin-little: .5rem;
 $margin-small: 2rem;
 $margin-mid: 4rem;
 
+// BOX SHADOW
+$box-shadow: .5rem 1rem 1rem .1rem rgba($color-black, .1);
+
 // RESPONSIVE BREAKPOINTS
 $bp-largest: 75em; //1200px div by 16px
 $bp-large: 56.25em; //900px div by 16px
