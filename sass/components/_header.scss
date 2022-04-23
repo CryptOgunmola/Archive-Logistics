@@ -1,0 +1,48 @@
+.heading {
+    //background-color: $color-primary;
+    background-image: linear-gradient(rgba($color-primary, .7), rgba($color-primary, .7)), 
+    url(/img/background.jpg);
+    background-size: cover;
+    background-position: top;
+    grid-column: extra-start / full-end;
+
+    position: relative;
+
+
+
+    &__primary {
+        text-transform: uppercase;
+        
+
+        &--main {
+            display: block;
+            font-size: 5rem;
+            font-weight: 400;
+            letter-spacing: 1rem;
+        }
+
+        &--sub {
+            display: block;
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: .5rem;
+        }
+    }
+
+    &__svg {
+        width: 20rem;
+        display: inline-block;
+        /*animation-name: busmovein;
+        animation-duration: 5s;*/
+        animation: busmovein 5s .1s ease-in-out;
+        transition: all;
+    }
+}
+
+.textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}

@@ -1,0 +1,75 @@
+.nav {
+    background-color: $color-tertiary;
+    grid-column: extra-start / full-end;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+
+    &__list {
+        display: flex;
+        
+
+        &--items {
+            list-style: none;
+
+            &:not(:last-child) {
+                margin-right: $margin-small;
+            }
+            
+        }
+    }
+
+    &__button {
+        padding-right: 3rem;
+
+
+    }
+
+    
+    .btn-1 {
+        &:hover {
+            background-color: $color-secondary;
+        }
+    }
+
+    .btn-2 {
+        &:hover {
+            background-color: $color-primary;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        &:hover {
+            color: orange;
+        }
+    }
+}
+
+.btn {
+    margin: $margin-small $margin-small $margin-small 0;
+    width: 10rem;
+    height: 4.5rem;
+    font-family: $font-primary;
+    font-size: 2rem;
+    font-family: inherit;
+    border-radius: 4rem;
+    border-style: none;
+    cursor: pointer; 
+    box-shadow: .5rem 1rem 1rem .5rem rgba($color-black, .1);  
+    transition: all .2s; 
+    
+    &:active {
+        transform: translateY(.5rem);
+        box-shadow: .25rem .5rem .5rem .25rem rgba($color-black, .1);
+    }
+}

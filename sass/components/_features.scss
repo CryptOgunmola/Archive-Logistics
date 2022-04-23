@@ -1,0 +1,101 @@
+.features {
+    //background-color: $color-secondary;
+    grid-column: full-start  / center-end;
+
+    @media only screen and (max-width: $bp-mid) {
+        grid-column: full-start / center-end;
+        grid-gap: 5rem;
+    }
+    margin: 15rem 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 7rem;
+
+    @media only screen and (max-width: $bp-small) {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    
+    }
+
+    
+
+}
+
+.feature {
+    color: $color-hover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+    grid-row-gap: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+
+    }
+
+    &__img {
+        width: 100%;
+        grid-column: 1 / span 2;
+
+        @media only screen and (max-width: $bp-small) {
+            width: 12rem;
+            height: 12rem;
+
+            display: block;
+
+            opacity: 0;
+
+        }
+    }
+
+    &__h {
+        background-color: $color-navy;
+        padding: 3rem 1rem;
+        box-shadow: .5rem 1rem 1rem .5rem rgba($color-black, .1);
+        text-align: center;
+        grid-row: 2 / 3;
+        font-size: 2.5rem;
+        justify-self: center;
+        align-self: center;
+        border-radius: .5rem;
+        margin-right: $margin-small;
+
+        @media only screen and (max-width: $bp-small) {
+            display: block;
+            justify-content: center;
+            align-self: flex-start;
+            margin-right: -5rem;
+        }
+
+        @media only screen and (max-width: $bp-smallest) {
+            margin-right: 5rem;
+
+        }
+
+        &--1 {
+            transform: translateY(-4rem);
+        }
+
+        &--2 {
+            transform: translateY(-15rem);
+        }
+    }
+
+    &__text {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        font-size: 2.5rem;
+        justify-content: start;
+        align-items: start;
+
+        @media only screen and (max-width: $bp-small) {
+            display: block;
+            justify-content: flex-start;
+            align-self: flex-start;
+
+            margin-bottom: -5rem;
+            transform: translateY(-10rem);
+        }
+    }
+}

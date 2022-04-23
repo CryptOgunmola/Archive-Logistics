@@ -1,0 +1,27 @@
+.cta {
+    background-color: $color-grey-light;
+    grid-column: col-start 2 / col-end 6;
+
+    text-align: center;
+
+    text-transform: uppercase;
+    
+    &-text {
+        font-size: 2.5rem;
+        color: $color-navy;
+    }
+}
+
+.btn-cta {
+    width: 14rem !important; 
+    height: 6rem !important;
+
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $color-tertiary;
+        transform: scale(1.5);
+        transition: all .2s;
+    }
+}
+
